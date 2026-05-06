@@ -1,0 +1,28 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" id="1"><input type="submit" value="sprawdz" onclick="sprawdz()">
+        <div id="wynik">
+
+        </div>
+        <SCRIPT>
+function sprawdz(){
+    let liczba = document.getElementById("1").value;
+    if(liczba =="") document.getElementById("wynik").innerHTML="Podaj liczbe";
+    else if(liczba >0 ) document.getElementById("wynik").innerHTML="dodatnia";
+    else if(liczba < 0){ document.getElementById("wynik").innerHTML="ujemna";}
+    else if(liczba == 0){ document.getElementById("wynik").innerHTML="zero";}
+    else document.getElementById("wynik").innerHTML="To nie liczba, aż tak źle z wiedzą?";
+
+}
+        </SCRIPT>
+        
+    </body>
+    </html>
+</html>
